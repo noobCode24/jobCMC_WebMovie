@@ -1,18 +1,11 @@
-import { useEffect, useState } from "react";
+import "./App.css"
+import Home from "./pages/Home/Home";
 
 function App() {
-  const [count, setCount] = useState(1)
-
-  useEffect(() =>{
-    console.log('re-render')
-  })
   return (
-    <>
-      <div>
-        <div>{count}</div>
-        <button onClick={() => setCount(count + 1)}>Click me</button>
-      </div>
-    </>
+    <div className='app'>
+      <Home />
+    </div>
   );
 }
 
